@@ -36,7 +36,7 @@ jobs:
           the [generate-sitemap](https://github.com/cicirello/generate-sitemap) 
           GitHub action.  
         commit-message: "Automated sitemap update."
-        author: D4LMwastaken <D4LMwastaken@users.noreply.github.com>
-        committer: D4LMwastaken <D4LMwastaken@users.noreply.github.com>
+        author: D4LMwastaken <148903901+D4LMwastaken@users.noreply.github.com>
+        committer: D4LMwastaken <148903901+D4LMwastaken@users.noreply.github.com>
         branch: create-pull-request/sitemap
         delete-branch: true
