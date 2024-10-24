@@ -26,9 +26,6 @@ h2 {
 
 
 /* Apply your text styling */
-#orbitsText {
-  transition: transform 0.3s ease-in-out;
-}
 
 img.animatedImg {
   transition: transform 0.3s ease-in-out;
@@ -43,14 +40,15 @@ img.animatedImg {
 
 }
 
-#orbitsText:hover {
+.orbitsText:hover {
   transform: scale(1.2); /* Zoom in by 20% */
 }
 
 /* ... Previous CSS rules ... */
 
 /* Apply your text styling */
-#orbitsText {
+.orbitsText {
+  transition: transform 0.3s ease-in-out;
   text-align: center;
   font-family: 'Outfit', sans-serif;
   font-weight: 700;
@@ -67,7 +65,7 @@ img.animatedImg::before {
 }
 
 
-#orbitsText::before {
+.orbitsText::before {
   /* ... Previous ::before rules ... */
   transform-origin: bottom left;
   transform: scaleX(0);
@@ -75,14 +73,14 @@ img.animatedImg::before {
   transition: transform 0.3s ease;
 }
 
-#orbitsText:hover::before {
+.orbitsText:hover::before {
   transform: scaleX(1);
 }
 
 /* Add a keyframes animation for initial line height animation */
 @keyframes initialLineHeight {
   0% {
-    line-height: 0%;
+    line-height: 0;
     
   }
   100% {
@@ -92,7 +90,7 @@ img.animatedImg::before {
 
 @keyframes fontSizeAnimation {
   0%  {
-    font-size: 0%;
+    font-size: 0;
   }
   100% {
     font-size: 500%;
@@ -101,7 +99,7 @@ img.animatedImg::before {
 
 @keyframes initialImageHeight {
   0% {
-    height: 0px;
+    height: 0;
   }
   100% {
     height: 145px;
@@ -113,17 +111,13 @@ img.animatedImg::before {
 
 
 /* Apply the initial line height animation to the #orbitsText element */
-#orbitsText {
+.orbitsText {
   animation: initialLineHeight 0.3s ease-in-out;
 }
 h1 {
   animation: fontSizeAnimation 0.3s ease-in-out;
 }
 
-#orbitsText d4lmText {
-  inherits:all;
-  font-family: 'Ubuntu';
-}
 
 /* Other previous CSS rules... */
 
@@ -148,10 +142,7 @@ img:hover {
 
 
 .container {
-  margin-left: -20px;
-  margin-right: -20px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 0 -20px;
   left: 0;
   right: 0;
   align-items: center;
