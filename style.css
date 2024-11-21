@@ -10,13 +10,12 @@ h1 {
 }
 
 
-
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to bottom, #25353c, #11478d);
+  background-image: linear-gradient(to bottom, #aaf1f3, #4dccff);
 }
 
 
@@ -52,7 +51,7 @@ img.animatedImg {
   text-align: center;
   font-family: 'Outfit', sans-serif;
   font-weight: 700;
-  background: -webkit-linear-gradient(#ffac75, #f6ff75);
+  background: -webkit-linear-gradient(#5ce1e6, #00f7ff);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
