@@ -1,15 +1,14 @@
 /* Reset some default styles */
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   resize: none;
 }
 
 h1 {
- font-size: 80px; 
+  font-size: 80px;
 }
-
-
 
 body {
   display: flex;
@@ -19,11 +18,9 @@ body {
   background-image: linear-gradient(to bottom, #25353c, #11478d);
 }
 
-
 h2 {
   font-size: 22px;
 }
-
 
 /* Apply your text styling */
 
@@ -37,7 +34,6 @@ img.animatedImg {
   flex-direction: column; /* Stack elements vertically */
   align-items: center;
   justify-content: center; /* Center elements vertically */
-
 }
 
 .orbitsText:hover {
@@ -50,7 +46,7 @@ img.animatedImg {
 .orbitsText {
   transition: transform 0.3s ease-in-out;
   text-align: center;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   font-weight: 700;
   background: -webkit-linear-gradient(#ffac75, #f6ff75);
   background-clip: text;
@@ -63,7 +59,6 @@ img.animatedImg {
 img.animatedImg::before {
   transform-origin: bottom left;
 }
-
 
 .orbitsText::before {
   /* ... Previous ::before rules ... */
@@ -81,7 +76,6 @@ img.animatedImg::before {
 @keyframes initialLineHeight {
   0% {
     line-height: 0;
-    
   }
   100% {
     line-height: 125%;
@@ -89,7 +83,7 @@ img.animatedImg::before {
 }
 
 @keyframes fontSizeAnimation {
-  0%  {
+  0% {
     font-size: 0;
   }
   100% {
@@ -106,10 +100,6 @@ img.animatedImg::before {
   }
 }
 
-
-
-
-
 /* Apply the initial line height animation to the #orbitsText element */
 .orbitsText {
   animation: initialLineHeight 0.3s ease-in-out;
@@ -117,7 +107,6 @@ img.animatedImg::before {
 h1 {
   animation: fontSizeAnimation 0.3s ease-in-out;
 }
-
 
 /* Other previous CSS rules... */
 
@@ -130,7 +119,6 @@ img.round {
   animation: initialImageHeight 0.3s ease-in-out;
 }
 
-
 img {
   transition: transform 0.2s ease-in-out;
 }
@@ -138,8 +126,6 @@ img {
 img:hover {
   transform: scale(1.04); /* Zoom in by 4% */
 }
-
-
 
 .container {
   margin: 0 -20px;
@@ -153,4 +139,116 @@ img:hover {
 .icons {
   width: 200px;
   height: 200px;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ffc94d;
+}
+.container {
+  width: 90%;
+  max-width: 800px;
+  position: relative;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #ffc94d;
+  border-radius: 8px;
+  padding: 50px;
+  margin-bottom: 45px;
+  margin-top: 24px;
+  position: relative;
+}
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+.card::after,
+.card::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(
+    from var(--angle),
+    #ff4545,
+    #00ff99,
+    #006aff,
+    #ff0095,
+    #ff4545
+  ); /* this is the colors you can change */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  padding: 2px;
+  border-radius: 8px;
+  animation: 3s spin linear infinite;
+}
+.card::before {
+  filter: blur(1.5rem);
+  opacity: 75%;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+.card:last-child {
+  margin-bottom: 0;
+}
+.info {
+  flex: 1;
+  margin-right: 16px;
+}
+.info h2 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+  text-align: left;
+  color: #333;
+}
+.info p {
+  margin: 0;
+  font-size: 1rem;
+  color: #666;
+}
+.image {
+  width: 200px;
+  height: 200px;
+  background-color: #ccc;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0ea3ff;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
