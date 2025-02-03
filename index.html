@@ -1,287 +1,74 @@
-
 <!DOCTYPE html>
 
-<html>
+<html lang="en-us">
   <head>
     <title>LHSCC Website</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stm ylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<script src="https://kit.fontawesome.com/8045574054.js" crossorigin="anonymous"></script>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-      @font-face {
-        font-family: "Bernhard-Gothic";
-        src: url("./BernhardGothicURW-Heavy.ttf") format('truetype');
-      }
-    body, h2,h4,h5,h6 {
-      color: #ffbe3e;
-      font-family: "Bernhard-Gothic", sans-serif;
-    }
-    h1 {
-      font-family: "Bernhard-Gothic", sans-serif;
-    }
-    h1 {
-      color: #5ce1e6;
-    }
-    h3 {
-      font-family: "Bernhard-Gothic", sans-serif;
-    }
-    h3 {
-      color: #FFFFFF;
-      font-size: 3.875em;
-    }
-    p {
-    color: #ffbe3e; /* #ffbe3e #5ce1e6 #FFFFFF */
-    }
-    
-    
-    #main {margin-left: 80px}
-    /* Remove margins from "page content" on small screens */
-    @media only screen and (max-width: 600px) {
-      #main {margin-left: 0}; 
-    }
-    p {
-      font-size: 1.5em;
-    }
-    .header {
-      font-size: 5em;
-    }
-    .sidebar {
-  height: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #5ce1e6;
-  overflow-x: hidden;
-  padding-top: 16px;
-  padding-left: 5px;
-  padding-right: 5px;
-  max-width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-.sidebar a {
-  padding: 6px 6px 6px 6px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #FFFFFF;
-  display: block;
-  
-}
-
-.sidebar a:hover {
-  color: #f1f1f1;
-}
-.sidebar a i {
-  transition: all 0.3s linear;
-}
-.sidebar a:hover i {
-  transform: scale(1.25);
-}
-
-.main {
-  margin-left: 80px; /* Same as the width of the sidenav */
-  padding: 15px 15px;
-}
-
-/* @media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
-} */
-
-.mainSection {
-  padding-up: 0px;
-  padding-down: 0px;
-}
-.socialsContainer {
-  background-color: #ffbe3e;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  padding-left: 25px;
-  padding-right: 25px;
-  height: 80px;
-
-}
-.projectsContainer {
-  padding-left: 25px;
-  padding-right: 25px;
-  background-color: #FFFFFF;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-.projectsContainer h2 {
-  color: #ffbe3e;
-  font-size: 65px;
-}
-.projectGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 0.4fr));
-  max-width: 900px;
-  margin: 20px;
-  justify-content: center;
-}
-.projectCard {
-  background: linear-gradient(152deg, #FFFFFF, #ffbe3e);
-  padding: 2rem;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  color: #ffbe3e;
-  border-radius: 8px;
-  width: 300px;
-}
-.d4lm {
-  background: linear-gradient(152deg, #020204, #39163f);
-}
-.d4lm p {
-  color: #FFFFFF;
-  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-}
-
-.projectCard:hover {
-  transform: scale(105%);
-  box-shadow: 0 10px 20px rgba(139,47,147,0.2);
-}
-.agenda {
-  padding-top: 20px;
-  padding-bottom: 20px; 
-  text-align: center;
-  background-color: #5ce1e6;
-}
-.agenda h2 {
-  color: #FFFFFF;
-}
-.agenda p {
-  color: #FFFFFF;
-}
-.aboutUs {
-  padding-top: 20px;
-  padding-bottom: 20px; 
-  text-align: center;
-  background-color: #ffbe3e;
-}
-.aboutUs img {
-  border-radius: 25px;
-  margin: 16px;
-  outline-style: solid;
-  outline-width: 8px;
-  outline-color: #FFFFFF;
-}
-.aboutUs img {
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-.aboutUs img:hover {
-  transform: translateY(-10px);
-
-}
-.LRPadding {
-  padding-left: 25px;
-  padding-right: 25px;
-}
-.socialsContainer a i {
-  color: #FFFFFF;
-  margin: 10px;
-  transition: all 0.15s ease;
-}
-.socialsContainer a:hover i {
-  transform: translateY(-2px);
-}
-
-.dsc:hover {
-  color: #5865F2;
-}
-.ig:hover{
-  color: #E1306C;
-}
-.yt:hover {
-  color: #FF0000;
-}
-.fb:hover {
-  color: #4267B2;
-}
-.xtw:hover {
-  color: #000000;
-}
-.git:hover {
-  color: #000000;
-}
-.mai:hover {
-  color: #666666;
-}
-.roundEdges {
-  border-radius: 500px;
-}
-    </style>
+    <link rel="stylesheet" href="styles/w3.css">
+    <link rel="stm ylesheet" href="styles/Montserrat.css">
+    <script src="scripts/FontAwesome.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/animate.min.css"/>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="icon" href="Icons/Logo%20Main%20Gradient.png">
+    <meta name="google-site-verification" content="Jkz5NVDdtH-flgqHf31koxTQO0Vccs3ZJaEd9FNb07Y" />  <!-- Google site
+    verification -->
+    <meta name="msvalidate.01" content="EF8DDE41FFE90F9E2692E0222532A070" /> <!--Bing site verification-->
+    <meta name="description" content="Main page for Largo High School Coding Club, includes the status, portfolio, members
+    list, and links to our webpages."> <
   </head>
 <body>
-  <div class="sidebar" id="sigma">
-    <img src="Logo Main Gradient.png" height="15%"">
-    <a href="#home"><i class="fas fa-fw fa-home fa-1x""></i></a>
+  <div class="sidebar">
+    <img src="Icons/Logo%20Main%20Gradient.png" alt="LHSCC Logo" height="262">
+    <a href="#home"><i class="fas fa-fw fa-home fa-1x"></i></a>
     <a href="#members"><i class="fa-solid fa-users fa-1x"></i></a>
-    <a href="#projects"><i class="fa-solid fa-laptop-code fa-1x"></i></i></a>
+    <a href="#projects"><i class="fa-solid fa-laptop-code fa-1x"></i></a>
     <a href="#agenda"><i class="fa-solid fa-calendar-days fa-1x"></i></a>
-    
-
   </div>
   <div id="mainSection" class="mainSection">
       <div class="LRPadding">
       <h1 id="home">Largo High School Coding Club</h1>
-      <h2>Announcements:</h1>
-      <p>Join the <a href="https://discord.gg/kNrSGKD5wq">Club's Discord Server</a> frfr, we are better than Red Cross Club, as formally declared by their president during the LYLC festival.</p>
+      <h2>Announcements:</h2>
+      <p>Join the <a href="https://discord.gg/kNrSGKD5wq">Club's Discord Server</a> Just to let you know, we are better
+        than the Largo High School Red Cross Club, as formally declared by their president during the Largo Youth Mental
+        Health festival.</p>
       </div>
       <div class="aboutUs">
         <h3 id="members">About Us</h3>
-        <img src="About Me ORBITALS.png" height=400><a href="https://d4lmwastaken.github.io/"><img src="About Me D4LM.png" height=400></a>
+        <img src="Photos/AboutMe/Orbitals.png" height=500 alt="Orbitals">
+        <a href="https://d4lmwastaken.github.io/">
+          <img src="Photos/AboutMe/D4LM.png" height=500 alt="D4LM">
+        </a>
       </div>
       <div class="projectsContainer" id="projects">
       <h2>Projects</h2>
-
         <div class="projectGrid">
-        
         <a href="https://d4lmwastaken.github.io/" class="projectCard d4lm">
-        <img src="Logo D4LM.jpg" height=145 class="roundEdges">
-        <p>website</p>
-        
+        <img src="Icons/Logo%20D4LM.jpg" height=460 class="roundEdges" alt="D4LM's Logo">
+        <p>D4LM's Website</p>
         </a>
 
         <a href="https://d4lmwastaken.github.io/LHSCC-Discord-Bot/" class="projectCard d4lm">
-        <img src="Logo Main Block.png" height=145>
-        <p>discord bot</p>
+          <img src="Icons/Logo%20Block.png" height=145 alt="LHSCC Logo">
+          <p>LHSCC Discord Bot</p>
         </a>
         </div>
       </div>
   <div class="agenda" id="agenda">
-    <h2>Agenda for MM/DD/YY</h2>
-    <p>{Insert Julian's weekly Yapanese yappuccino here}</p>
+    <a href="Files/Agenda/LHSCC%20Coding%20Club%201-30-2025.pdf">
+      <h2>Agenda for January 30th, 2025</h2>
+    </a>
+    <object data="Files/Agenda/LHSCC%20Coding%20Club%201-30-2025.pdf" type="application/pdf" width="100%" height="100%">
+    </object>
   </div>
   <div class="socialsContainer">
     <a href="https://github.com/LHSCoding"><i class="fa-fw fa-solid fa-brands fa-github fa-2x git"></i></a>
     <a href="https://discord.gg/kNrSGKD5wq"><i class="fa-fw fa-solid fa-brands fa-discord fa-2x dsc"></i></a>
     <a href="https://www.youtube.com/@lhscc"><i class="fa-fw fa-solid fa-brands fa-youtube fa-2x yt"></i></a>
     <a href="https://www.instagram.com/lhs.coding/"><i class="fa-fw fa-solid fa-brands fa-instagram fa-2x ig"></i></a>
-    <a href="#facebook"><i class="fa-fw fa-solid fa-brands fa-facebook fa-2x fb"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=61564881492918"><i class="fa-fw fa-solid fa-brands fa-facebook fa-2x fb"></i></a>
     <a href="x.com/lhscoding"><i class="fa-fw fa-solid fa-brands fa-x-twitter fa-2x xtw"></i></a>
-    <a href="malito:largohscc@gmail.com"><i class="fa-fw fa-solid fa-envelope fa-2x mai"></i></a>
-
+    <a href="mailto:largohscc@gmail.com"><i class="fa-fw fa-solid fa-envelope fa-2x mai"></i></a>
   </div>
   
 
