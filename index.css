@@ -249,10 +249,19 @@ p {
   border-radius: 500px;
 }
 
-a {
+.link-blue {
   background: 
-    linear-gradient(to right, rgba(100, 200, 200, 1), rgba(100, 200, 200, 1)),
+    linear-gradient(to right, #5ce1e6, #5ce1e6),
     linear-gradient(to right, #5ce1e6, #5ce1e6, #FFFFFF);
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+.link-yellow {
+  background: 
+    linear-gradient(to right, #ffbe3e, #ffbe3e),
+    linear-gradient(to right, #ffbe3e, #ffbe3e, #FFFFFF);
   background-size: 100% 0.1em, 0 0.1em;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
