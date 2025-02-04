@@ -10,5 +10,5 @@
 * **Contact Us**
 
 ### Contributors
-* **Orbitals**
+* **S-Orbital**
 * **D4LM**
