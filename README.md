@@ -10,5 +10,5 @@
 * **Contact Us**
 
 ### Contributors
-* **S-Orbital**
-* **D4LM**
+* Lead Developer: **S-Orbital**
+* Agenda & Bug Maintenance: **D4LM**
