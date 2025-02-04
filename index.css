@@ -129,6 +129,8 @@ p {
   display: inline-grid;
   grid-template-columns: auto auto auto;
   justify-content: center;
+    padding: 100px;
+    
 }
 .projectCard {
   background: linear-gradient(152deg, #FFFFFF, #ffbe3e);
@@ -143,7 +145,7 @@ p {
   text-align: center;
   color: #ffbe3e;
   border-radius: 8px;
-  width: 300px;
+  width: 250px;
 }
 .d4lm {
   background: linear-gradient(152deg, #020204, #39163f);
