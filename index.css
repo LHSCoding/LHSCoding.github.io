@@ -44,7 +44,7 @@ p {
   z-index: 1;
   top: 0;
   left: 0;
-  background-image: linear-gradient(82deg, #5ce1e6,#5ce1e6,#5ce1e6,#5ce1e6,#5ce1e6,#5ce1e6,#FFFFFF,#FFFFFF,#5ce1e6);
+  background-image: linear-gradient(82deg, #5ce1e6,#5ce1e6,#5ce1e6,#FFFFFF,#FFFFFF,#5ce1e6);
   overflow-x: hidden;
   padding-top: 16px;
   padding-left: 5px;
