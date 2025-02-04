@@ -123,7 +123,7 @@ p {
 }
 .projectGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 0.8fr));
+  grid-template-columns: repeat(auto-fit, minmax(800px, 0.95fr));
   max-width: 900px;
   margin: 120px;
   justify-content: center;
