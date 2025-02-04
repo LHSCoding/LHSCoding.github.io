@@ -121,6 +121,7 @@ p {
 .projectsContainer h2 {
   color: #ffbe3e;
   font-size: 65px;
+text-align: center;
 }
 .projectGrid {
   display: grid;
