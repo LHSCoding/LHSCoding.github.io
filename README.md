@@ -5,10 +5,10 @@
 
 ### Features
 * **Announcements**
-* **Projects**
 * **About Us**
+* **Projects**
 * **Contact Us**
 
 ### Contributors
-* **D4LM**
 * **Orbitals**
+* **D4LM**
