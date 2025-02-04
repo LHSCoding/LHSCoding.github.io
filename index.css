@@ -123,9 +123,9 @@ p {
 }
 .projectGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 0.4fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 0.8fr));
   max-width: 900px;
-  margin: 20px;
+  margin: 120px;
   justify-content: center;
 }
 .projectCard {
